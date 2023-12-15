@@ -1,53 +1,62 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
+  --color-text: #0d0d0d;
+  --color-background: #f6f6f9;
+  --color-primary: #e17815;
+  --color-secondary: #1675e2;
+  --color-accent: #0611b7;
+  --color-danger: #ea4144;
+  --color-success: #b1ee50;
+  --color-warning: #fff700;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-dark: #363949;
+  --color-light:rgba(132, 139, 200, 0.18);
+  --color-dark-variant: #677483;
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 1.2rem;
 
-  --vt-c-indigo: #2c3e50;
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
 
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
-
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+  --persian-blue-50: #f5faff;
+  --persian-blue-100: #d6eaff;
+  --persian-blue-200: #b7dbff;
+  --persian-blue-300: #85c6ff;
+  --persian-blue-400: #4ba6ff;
+  --persian-blue-500: #227fff;
+  --persian-blue-600: #0a5dff;
+  --persian-blue-700: #0446f1;
+  --persian-blue-800: #0b3bcb;
+  --persian-blue-900: #103598;
+  --persian-blue-950: #0f225c;
 }
-
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
-
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
-
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
-
-  --section-gap: 160px;
+/* :root[data-theme="light"] {
+  --text: #0d0d0d;
+  --background: #ffffff;
+  --primary: #e17815;
+  --secondary: #1675e2;
+  --accent: #0611b7;
 }
+:root[data-theme="dark"] {
+  --text: #f2f2f2;
+  --background: #000000;
+  --primary: #ea811f;
+  --secondary: #1c7be9;
+  --accent: #4854f9;
+} */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
 
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
 
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
+.dark-mode-variables{
+  --color-backgruound: #181a1e;
+  --color-white:#202528;
+  --color-dark:#ededdf;
+  --color-dark-variant:#a3bdcc;
+  --color-light: rgba(0,0,0,0,0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
 *,
@@ -55,32 +64,70 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  font-weight: normal;
+  padding: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
 }
 
 body {
-  min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
-  transition:
-    color 0.5s,
-    background-color 0.5s;
-  line-height: 1.6;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  font-size: 15px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Rethink Sans';
+  font-weight: 400;
+  width: 100vw;
+  height: 100vh;
+  font-size: 0.88rem;
+  user-select: none;
+  overflow-x: hidden;
+  color: var(--color-dark);
+  background-color: var(--color-background);
 }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Rethink Sans';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 2.489rem; /* 39.84px */}
+
+h2 {font-size: 2.074rem; /* 33.12px */}
+
+h3 {font-size: 1.728rem; /* 27.68px */}
+
+h4 {font-size: 1.440rem; /* 23.04px */}
+
+h5 {font-size: 1.200rem; /* 19.2px */}
+
+small {font-size: 0.833rem; /* 13.28px */}
+
+p{
+  color: var(--color-dark-variant);
+}
+
+b{
+  color:var(--color-text)
+}
+
+.text-muted{
+  color: var(--color-info-dark);
+}
+
+.primary{
+  color: var(--color-primary);
+}
+
+.danger{
+  color:var(--color-danger);
+}
+
+.success{
+  color:var(--color-success);
+}
+
+.warning{
+  color: var(--color-warning);
+}
+
+
