@@ -1,10 +1,7 @@
 <template>
-  <!-- <header>
-    <div>header</div>
-  </header> -->
   <div class="container">
     <sidebarMain/>
-    
+    <headerTop/>
     <main>
       <!--Main content -->
       <RouterView />
@@ -118,96 +115,10 @@
         <a href="#">Show All</a>
       </div>
       <!--End of Recent Orders -->
+      <div class="back-drop" id="backdrop">
+        <button class="backdrop-button" ></button>
+      </div>
     </main>
-    <!--End of main-->
-    <!-- Right Section-->
-    <div class="right-section">
-      <div class="nav">
-        <button class="menu-btn">
-          <span class="material-symbols-outlined">
-            menu
-          </span>
-        </button>
-        <div class="dark-mode">
-          <span class="material-symbols-outlined active">
-            light_mode
-          </span>
-          <span class="material-symbols-outlined">
-            dark_mode
-          </span>
-        </div>
-        <div class="profile">
-          <div class="info">
-            <p>Hey, <b>Tim</b></p>
-            <smal class="text-muted">Admin</smal>
-          </div>
-          <div class="profile-photo">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          </div>
-        </div>
-      </div>
-      <!--End of Navigation-->
-      <div class="user-profile">
-        <div class="logo">
-          <img src="./assets/logo.svg" alt="Logo">
-          <h2>Prestadores</h2>
-          <p>Web Platform</p>
-        </div>
-      </div>
-      <div class="reminders">
-        <div class="header">
-          <h2>Reminders</h2>
-          <spam class="material-symbols-outlined">
-            notifications_none
-          </spam>
-        </div>
-        <div class="notyfications">
-          <div class="icon">
-            <span class="material-symbols-outlined">
-              volume_up
-            </span>
-          </div>
-          <div class="content">
-            <div class="info">
-              <h3>Workshop</h3>
-              <small class="text-muted">
-                08:00 AM - 12:00 PM
-              </small>
-            </div>
-            <spam class="material-symbols-outlined">
-              more_vert
-            </spam>
-          </div>
-        </div>
-        <div class="notyfications deactive">
-          <div class="icon">
-            <spam class="material-symbols-outlined">
-              edit
-            </spam>
-          </div>
-          <div class="content">
-            <div class="info">
-              <h3>Workshop</h3>
-              <small class="text-muted">
-                08:00 AM - 12:00 PM
-              </small>
-            </div>
-            <spam class="material-symbols-outlined">
-              more_vert
-            </spam>
-          </div>
-        </div>
-        <div class="notyfications add-reminder">
-          <div>
-            <spam class="material-symbols-outlined">
-              add
-            </spam>
-          </div>
-          <h3>Add Reminder</h3>
-        </div>
-      </div>
-    </div>
-      <!--End of Right Section -->
   </div>
 
 
@@ -218,6 +129,7 @@
 // import { RouterLink, RouterView } from 'vue-router'
   import { ref } from 'vue';
   import sidebarMain from './components/sidebar/sidebar-main.vue';
+  import headerTop from './components/header/header.vue';
   import orders from './orders';
   
   const Orders = ref(orders);
@@ -225,21 +137,18 @@
 </script>
 
 <style scoped>
- header{
-  border-width: 1px;
-  border-color: aqua;
-  border-style: dashed;
-  width: 100%;
-  height: 100px;
- }
 
- main{
-  border-width: 1px;
-  border-color: aqua;
+ /* aside{
+  border-width: 2px;
+  border-color: rgb(255, 0, 0);
   border-style: dashed;
-  width: 100%;
-  height: 100vh;
- }
+ } */
+
+  /* *{
+  border-width: 1px;
+  border-color: rgb(255, 0, 0);
+  border-style: dashed;
+ } */
 
 </style>
 

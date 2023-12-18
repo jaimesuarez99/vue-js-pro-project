@@ -1,7 +1,12 @@
 @media screen and (max-width:1280px) {
     .container{
         width: 95%;
-        grid-template-columns: 7rem auto 23rem;
+        grid-template-columns: 6rem auto;
+        grid-template-rows: 4.7rem auto;
+    }
+
+    aside .toggle{
+        justify-content: center;
     }
 
     aside .logo h2{
@@ -13,12 +18,29 @@
     }
 
     aside .sidebar a{
-        width: 5.6rem;
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+
+    aside .sidebar .message-count{
+        position: absolute;
+        right: 20%;
+        bottom: 20%;
     }
 
     aside .sidebar a:last-child{
         position: relative;
         margin-top: 1.8rem;
+    }
+
+    aside .sidebar a.router-link-exact-active span{
+        margin-left: 0;
+    }
+
+    aside .sidebar a.router-link-exact-active::before{
+        position: absolute;
+        left: 0;
     }
 
     main .analyse {
@@ -60,8 +82,9 @@
 @media screen and (max-width:768px){
     .container{
         width: 100%;
-        grid-template-columns: 1fr;
+        grid-template-columns: 0 1fr;
         padding: 0 var(--padding-1);
+        column-gap: 0;
     }
 
     aside{
@@ -98,6 +121,8 @@
     aside .sidebar a{
         width: 100%;
         height: 3.4rem;
+        margin-left: 2rem;
+        justify-content: unset;
     }
 
     aside .sidebar a:last-child{
@@ -105,14 +130,27 @@
         bottom: 5rem;
     }
 
+    aside .toggle{
+        justify-content: space-between;
+    }
+
     aside .toggle .close{
         display: inline-block;
         cursor: pointer;
     }
 
+    aside .sidebar a.router-link-exact-active span{
+        margin-left: calc(1rem - 3px);
+    }
+
+    aside .sidebar a.router-link-exact-active::before{
+        position: relative;
+    }
+
     main{
         margin-top: 8rem;
         padding: 0 1rem;
+        grid-column: 1;
     }
     
     main .new-users .user-list .user{
@@ -129,12 +167,8 @@
         width: 100%;
         margin: 0;
     }
-    .right-section{
-        width: 94%;
-        margin: 0 auto 4rem;
-    }
 
-    .right-section .nav{
+    .header .nav{
         position: fixed;
         top: 0;
         left: 0;
@@ -148,7 +182,7 @@
         margin: 0;
     }
 
-    .right-section .nav .dark-mode{
+    /* .right-section .nav .dark-mode{
         width: 4.4rem;
         position: absolute;
         left: 66%;
@@ -156,9 +190,9 @@
 
     .right-section .profile .info{
         display: none;
-    }
+    } */
 
-    .right-section .nav button{
+    .header .nav button{
         display: inline-block;
         background-color: transparent;
         cursor: pointer;
@@ -167,7 +201,7 @@
         left: 1rem;
     }
 
-    .right-section .nav button span{
+    .header .nav button span{
         font-size: 2rem;
     }
 }
