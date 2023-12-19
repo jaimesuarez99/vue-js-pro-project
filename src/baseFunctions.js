@@ -1,3 +1,4 @@
+// //dash-board
 const sideMenu = document.querySelector('aside');
 const headerButton = document.getElementById("menu-btn");
 const closeBtn = document.getElementById("menu-close-btn");
@@ -22,7 +23,6 @@ backDrop.addEventListener('click',() =>{
 })
 
 darkmode.addEventListener('click',()=>{
-  // document.body.classList.toggle('dark-mode-variables');
   const root = document.documentElement;
 
   if (root.getAttribute('data-theme') === 'dark') {
@@ -33,13 +33,17 @@ darkmode.addEventListener('click',()=>{
   darkmode.querySelector('span:nth-child(1)').classList.toggle('active');
   darkmode.querySelector('span:nth-child(2)').classList.toggle('active');
 })
+// //end-dash-board
 
-// document.getElementById('theme-toggle').addEventListener('click', function() {
-//   const root = document.documentElement;
+//Log-in
+const container = document.getElementById('login-container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
 
-//   if (root.getAttribute('data-theme') === 'dark') {
-//       root.removeAttribute('data-theme');
-//   } else {
-//       root.setAttribute('data-theme', 'dark');
-//   }
-// });
+registerBtn.addEventListener('click',() =>{
+  container.classList.add("active");
+})
+loginBtn.addEventListener('click',() =>{
+  container.classList.remove("active");
+})
+//End-log-in

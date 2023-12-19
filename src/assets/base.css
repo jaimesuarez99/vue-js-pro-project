@@ -4,14 +4,14 @@
   --color-primary: #e17815;
   --color-secondary: #1675e2;
   --color-accent: #0611b7;
-  --color-danger: #ea4144;
-  --color-success: #b1ee50;
-  --color-warning: #fff700;
+  --color-danger: #c53639;
+  --color-success: #85b33b;
+  --color-warning: #bfb91b;
   --color-white: #fff;
-  --color-info-dark: #7d8da1;
+  --color-info-dark: #7d81a1;
   --color-dark: #363949;
   --color-light:rgba(132, 139, 200, 0.18);
-  --color-dark-variant: #677483;
+  --color-dark-variant: #676a83;
 
   --card-border-radius: 2rem;
   --border-radius-1: 0.4rem;
@@ -21,6 +21,24 @@
   --padding-1: 1.2rem;
 
   --box-shadow: 0 2rem 3rem var(--color-light);
+
+  /*Log-in vars*/
+  --color-gradient: linear-gradient(to bottom right, var(--persian-blue-50), var(--persian-blue-100));
+  --color-gradient-2: linear-gradient(to right, #ff9b3d, var(--color-primary));
+  --login-border-radius: 30px;
+  --login-box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+  --login-light-box-shadow: 0 5px 15px rgba(255, 255, 255, 0.25);
+  --login-fontsize: 0.875rem;
+  --login-button-border-radius: 8px;
+
+  /*Log-in vars --End*/
+
+/* Loader Variables*/
+  --inner: 30px;
+  --border: 6px;
+  --spacing: 1px;
+/*Loaders End Var*/
+
   --persian-blue-50: #f5faff;
   --persian-blue-100: #d6eaff;
   --persian-blue-200: #b7dbff;
@@ -43,7 +61,7 @@
   --color-danger: #ea4144;
   --color-success: #b1ee50;
   --color-warning: #fff700;
-  --color-white: #161616;
+  --color-white: #1d1d1d;
   --color-info-dark: #7d8da1;
   --color-dark: #ededdf;
   --color-light:rgba(151, 151, 151, 0.18);
@@ -57,18 +75,17 @@
   --padding-1: 1.2rem;
 
   --box-shadow: 0 2rem 3rem var(--color-light);
+
+    /*Log-in vars*/
+    --color-gradient: linear-gradient(to bottom right, var(--persian-blue-50), var(--persian-blue-100));
+    --color-gradient-2: linear-gradient(to right, #ff9b3d, var(--color-primary));
+    --login-border-radius: 30px;
+    --login-box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+    --login-light-box-shadow: 0 5px 15px rgba(255, 255, 255, 0.25);
+    --login-fontsize: 0.875rem;
+    --login-button-border-radius: 8px;
+    /*Log-in vars --End*/
 } 
-
-
-
-.dark-mode-variables{
-  --color-backgruound: #181a1e;
-  --color-white:#202528;
-  --color-dark:#ededdf;
-  --color-dark-variant:#a3bdcc;
-  --color-light: rgba(0,0,0,0,0.4);
-  --box-shadow: 0 2rem 3rem var(--color-light);
-}
 
 *,
 *::before,

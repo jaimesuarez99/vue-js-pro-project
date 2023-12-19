@@ -77,6 +77,7 @@
     main table tbody tr td:first-child{
         display: none;
     }
+
 }
 
 @media screen and (max-width:768px){
@@ -181,16 +182,6 @@
         box-shadow: 0 1rem 1rem var(--color-light);
         margin: 0;
     }
-
-    /* .right-section .nav .dark-mode{
-        width: 4.4rem;
-        position: absolute;
-        left: 66%;
-    }
-
-    .right-section .profile .info{
-        display: none;
-    } */
 
     .header .nav button{
         display: inline-block;

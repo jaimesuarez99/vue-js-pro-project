@@ -3,9 +3,7 @@
     <sidebarMain/>
     <headerTop/>
     <main>
-      <!--Main content -->
       <RouterView />
-      <!--Analitycs content -->
       <h1>Analytics</h1>
       <div class="analyse">
         <div class="sales">
@@ -57,8 +55,6 @@
           </div>
         </div>
       </div>
-      <!--End of Analitycs content -->
-      <!--New Users Content-->
       <div class="new-users">
         <h2>New Users</h2>
         <div class="user-list">
@@ -86,8 +82,6 @@
           </div>
         </div>
       </div>
-      <!--End of New Users -->
-      <!--Recent Orders Table-->
       <div class="recent-orders">
         <h2>Recent Orders</h2>
         <table>
@@ -114,12 +108,14 @@
         </table>
         <a href="#">Show All</a>
       </div>
-      <!--End of Recent Orders -->
       <div class="back-drop" id="backdrop">
         <button class="backdrop-button" ></button>
       </div>
     </main>
   </div>
+  <!-- <loader></loader> -->
+  <!-- <logIn/> -->
+  
 
 
 
@@ -130,6 +126,8 @@
   import { ref } from 'vue';
   import sidebarMain from './components/sidebar/sidebar-main.vue';
   import headerTop from './components/header/header.vue';
+  import loader from './components/loader/loader.vue';
+  import logIn from './views/log-in.vue';
   import orders from './orders';
   
   const Orders = ref(orders);
