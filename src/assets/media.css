@@ -43,41 +43,6 @@
         left: 0;
     }
 
-    main .analyse {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-
-    main .new-users .user-list .user{
-        flex-basis: 40%;
-    }
-
-    main .recent-orders {
-        width: 94%;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        margin: 2rem 0 0 0.8rem;
-    }
-
-    main .recent-orders table{
-        width: 83vw;
-    }
-
-    main table thead tr th:last-child,
-    main table thead tr th:first-child{
-        display: none;
-    }
-
-    main table tbody tr td:last-child,
-    main table tbody tr td:first-child{
-        display: none;
-    }
-
 }
 
 @media screen and (max-width:768px){
@@ -153,21 +118,7 @@
         padding: 0 1rem;
         grid-column: 1;
     }
-    
-    main .new-users .user-list .user{
-        flex-basis: 35%;
-    }
 
-    main .recent-orders{
-        position: relative;
-        margin: 3rem 0 0 0;
-        width: 100%;
-    }
-
-    main .recent-orders table{
-        width: 100%;
-        margin: 0;
-    }
 
     .header .nav{
         position: fixed;
