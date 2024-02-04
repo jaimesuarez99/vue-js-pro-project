@@ -3,7 +3,7 @@
     <div class="toggle">
       <div class="logo">
         <img src="../../assets/logo.svg" alt="Prestadores Logo">
-        <h2>Prestadores</h2>
+        <h2>VueJs Pro</h2>
       </div>
       <div class="close" id="menu-close-btn">
         <span class="material-symbols-outlined">

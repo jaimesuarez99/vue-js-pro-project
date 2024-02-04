@@ -4,6 +4,7 @@
     <headerTop/>
     <main>
       <RouterView />
+      <Button label="Hola soy un boton"></Button>
       <div class="back-drop" id="backdrop">
         <button class="backdrop-button" ></button>
       </div>
@@ -19,6 +20,7 @@
 
 <script setup>
 // import { RouterLink, RouterView } from 'vue-router'
+  import Button from 'primevue/button';
   import { ref } from 'vue';
   import sidebarMain from './components/sidebar/sidebar-main.vue';
   import headerTop from './components/header/header.vue';

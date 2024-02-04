@@ -1,6 +1,7 @@
 .header * {
     margin: 0;
     border: 0;
+    padding: 0;
 }
 .header{
     width: 100%;
