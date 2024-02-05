@@ -4,7 +4,6 @@
     <headerTop/>
     <main>
       <RouterView />
-      <Button label="Hola soy un boton"></Button>
       <div class="back-drop" id="backdrop">
         <button class="backdrop-button" ></button>
       </div>

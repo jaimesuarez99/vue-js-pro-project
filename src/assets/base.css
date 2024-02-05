@@ -107,7 +107,7 @@ body {
   height: 100vh;
   /* font-size: 0.88rem; */
   user-select: none;
-  overflow-x: hidden;
+  overflow: hidden;
   /* overflow-y: hidden; */
   color: var(--color-dark);
   background-color: var(--color-background);

@@ -11,11 +11,12 @@ img{
 .container{
     display: grid;
     width: 96%;
+    height: 100vh;
     margin: 0 auto;
     gap: 1rem;
     grid-template-columns: 12rem auto;
     grid-template-rows: 4.7rem auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 aside * {
     margin: 0;
