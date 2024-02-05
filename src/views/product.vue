@@ -9,28 +9,28 @@
                         <!-- <small id="username-help">Enter your username to reset your password.</small> -->
                     </div>
                     <div class="input-group">
-                        <label for="productId">Title</label>
+                        <label for="title">Title</label>
                         <InputText id="title" v-model="productObj.title" type="text" placeholder="Tittle" />
                         <!-- <small id="username-help">Enter your username to reset your password.</small> -->
                     </div>
                     <div class="input-group">
-                        <label for="productId">Price</label>
+                        <label for="price">Price</label>
                         <InputText id="price" v-model="productObj.price" type="text" placeholder="Price" />
                         <!-- <small id="username-help">Enter your username to reset your password.</small> -->
                     </div>
                     <div class="input-group">
-                        <label for="productId">Category</label>
+                        <label for="category">Category</label>
                         <InputText id="category" v-model="productObj.category" type="text" placeholder="Category" />
                         <!-- <small id="username-help">Enter your username to reset your password.</small> -->
                     </div>
                     <div class="input-group">
-                        <label for="productId">Description</label>
-                        <Editor v-model="productObj.description" editorStyle="height: 200px" />
+                        <label for="description">Description</label>
+                        <Editor v-model="productObj.description" editorStyle="height: 200px" id="description" />
                         <!-- <small id="username-help">Enter your username to reset your password.</small> -->
                     </div>
                     <div class="input-group">
-                        <label for="productId">Image</label>
-                        <InputText id="image" v-model="productObj.image" type="text" placeholder="Image" />
+                        <label for="imageUrl">Image</label>
+                        <InputText id="imageUrl" v-model="productObj.image" type="text" placeholder="Image" />
                         <img class="product-img" :src="productObj.image"  />
                         <!-- <small id="username-help">Enter your username to reset your password.</small> -->
                     </div>
